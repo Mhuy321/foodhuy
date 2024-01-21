@@ -1,0 +1,20 @@
+.nav {
+    display: flex;
+    list-style: none;
+    background-color: #FFFF00;
+    color: rgb(183, 83, 83);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 60px;
+}
+
+.nav li {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.nav li:hover {
+    background-color: rgb(200, 65, 65);
+    color: rgb(15, 15, 15);
+}
