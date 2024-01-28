@@ -26,4 +26,11 @@
 .about {
     margin-top: 80px;
     text-align: center;
+    background-image: url(image/desktop-wallpaper-bakery-background-bakery.jpg);
+}
+
+.thongtin {
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
 }
