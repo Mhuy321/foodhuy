@@ -22,7 +22,7 @@
         <div class="container-app">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">FOODHUY</a>
+                    <a class="navbar-brand" href="/index.html">FOODHUY</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -30,10 +30,10 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="nav">
-                            <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
-                            <a class="nav-link" href="#">Shop</a>
-                            <a class="nav-link" href="#">Đăng nhập </a>
-                            <a class="nav-link" href="#">Đăng ký</a>
+                            <a class="nav-link active" aria-current="page" href="/about.html">Trang chủ</a>
+                            <a class="nav-link" href="/shop.html">Shop</a>
+                            <a class="nav-link" href="/login.html">Đăng nhập </a>
+                            <a class="nav-link" href="/signup.html">Đăng ký</a>
                         </div>
                     </div>
                 </div>
@@ -48,20 +48,24 @@
                     <header>Sign up</header>
                     <form action="#">
                         <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input">
+                            <input type="text" placeholder="Username" class="input" id="exampleInputUsername1">
                         </div>
                         <div class="field input-field">
-                            <input type="password" placeholder="Password" class="password">
+                            <input type="email" placeholder="Email" class="input" id="exampleInputEmail1">
+                        </div>
+                        <div class="field input-field">
+                            <input type="password" placeholder="Password" class="password" id="exampleInputPassword1">
                             <i class='bx bx-hide eye-icon'></i>
                         </div>
 
                         <div class="field input-field">
-                            <input type="password" placeholder="Confirm Password" class="confirm password">
+                            <input type="password" placeholder="Confirm Password" class="confirm password"
+                                id="exampleInputPassword2">
                             <i class='bx bx-hide eye-icon'></i>
                         </div>
 
                         <div class="field button-field">
-                            <button>Sign up</button>
+                            <button onclick="handleRegister()">Sign up</button>
                         </div>
                     </form>
 

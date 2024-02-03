@@ -16,7 +16,7 @@
 
 // localStorage.setItem('account123', JSON.stringify(accountData));
 
-var dataUser = JSON.parse(localStorage.getItem('account'))
+var dataUser = JSON.parse(localStorage.getItem('account123'))
 console.log("🚀 ~ file: index.js:20 ~ dataUser:", dataUser)
 // function getValue() {
 //     event?.preventDefault() // ngăn load trang web
@@ -57,6 +57,18 @@ function checkEmail(email, password, type) {
     }
 
 }
+function findUser(email, password, type, username) {
+    event?.preventDefault();
+    let user = username;
+    for (let i = 0; i < dataUser.length; i++) {
+        if (type === "login") {
+            if (password === dataUser[i].password && email === dataUser[i].email) {
+                user = dataUser[i].username;
+            }
+        } else { user = username }
+    }
+    return user;
+}
 
 ///dang ky
 // đọc dữ liệu tài khoản dưới localStorage
@@ -65,14 +77,19 @@ function handleRegister() {
     let valueEmail = document.getElementById('exampleInputEmail1').value;
     let valuePassword = document.getElementById('exampleInputPassword1').value;
     let valueConfPassword = document.getElementById('exampleInputPassword2').value;
-    if (valueEmail !== '' && valuePassword !== '') {
+    let valueUsername = document.getElementById('exampleInputUsername1').value;
+
+    if (valueEmail !== '' && valuePassword !== '' && valueConfPassword !== '' && valueUsername !== '') {
         if (checkEmail(valueEmail, valuePassword, valueConfPassword)) {
             alert('Email already exists')
         } else {
             if (valuePassword === valueConfPassword) {
-                dataUser.push({ id: dataUser.length + 1, email: valueEmail, password: valuePassword })
-                localStorage.setItem('account', JSON.stringify(dataUser))
-                alert('Register success') // ngược lại thông báo email hợp lệ
+                dataUser.push({ id: dataUser.length + 1, email: valueEmail, password: valuePassword, username: valueUsername })
+                localStorage.setItem('account123', JSON.stringify(dataUser))
+                alert('Register success')// ngược lại thông báo email hợp lệ
+                console.log(findUser(valueUsername))
+                // document.getElementById("hello").innerHTML = `Xin Chào ${findUser(valueUsername)}`
+                window.location.href = "index.html"
             } else {
                 alert('Confirm Password fail') // ngược lại thông báo email hợp lệ
             }
@@ -90,7 +107,7 @@ function handleLogin() {
     if (valueEmail !== '' && valuePassword !== '') {
         if (checkEmail(valueEmail, valuePassword.toString(), 'login')) {
             alert('Login successful')
-            window.location.href = 'theBand.html'
+            window.location.href = "index.html";
         } else {
             alert('Account not found')
         }
