@@ -34,3 +34,93 @@
     padding-left: 30px;
     padding-right: 30px;
 }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 20%;
+    margin-top: 70px;
+    margin-left: 10px;
+    z-index: -2;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 4px 16px;
+
+}
+
+.container h4 {
+    color: #345529;
+}
+
+.all-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img-pro {
+    width: 100%;
+}
+
+
+
+.a {
+    margin: 10px;
+}
+
+.b {
+    margin-left: 100px;
+}
+
+.abt-us {
+    display: flex;
+}
+
+.story {
+    color: #395542;
+}
+
+.image-con {
+    display: flex;
+}
+
+.welcome {
+    margin-top: 80px;
+}
+
+.giua {
+    margin-top: 250px;
+    background-color: #ac845c;
+}
+
+.banh1 {
+    text-align: center;
+    color: #eddecd;
+}
+
+.cac-loai {
+    display: flex;
+}
+
+.cac-loai-banh {
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.bread1 {
+    margin-top: 70px;
+}
+
+.container1 {
+    background-image: url("https://assets-global.website-files.com/649249d29a20bd6bc3deac45/649249d29a20bd6bc3deaeaa_Whole%20Milk%20Loaf.webp");
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+}

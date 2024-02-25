@@ -88,6 +88,7 @@ function handleRegister() {
                 localStorage.setItem('account123', JSON.stringify(dataUser))
                 alert('Register success')// ngược lại thông báo email hợp lệ
                 console.log(findUser(valueUsername))
+
                 // document.getElementById("hello").innerHTML = `Xin Chào ${findUser(valueUsername)}`
                 window.location.href = "index.html"
             } else {
@@ -130,3 +131,24 @@ for (let i = 0; i < dataUser.length; i++) {
 
     }
 }
+
+// const url = 'https://the-birthday-cake-db.p.rapidapi.com/5';
+// const options = {
+//     method: 'GET',
+//     headers: {
+//         'X-RapidAPI-Key': 'a5e1d535e2msh64933e77816bf55p184173jsn5367ac0b1e99',
+//         'X-RapidAPI-Host': 'the-birthday-cake-db.p.rapidapi.com'
+//     }
+// };
+// async function getdata() {
+//     try {
+//         const response = await fetch(url, options);
+//         const result = await response.json();
+//         console.log(result);
+//     } catch (error) {
+//         console.error(error);
+//     }
+// }
+
+
+
