@@ -126,7 +126,7 @@ let valuePassword = document.getElementById('exampleInputPassword1').value;
 
 for (let i = 0; i < dataUser.length; i++) {
     if (dataUser[i].email === valueEmail && dataUser[i].password === valuePassword) {
-        alert("login successful")
+        alert("Bạn đã được giảm 20%")
     } else {
 
     }

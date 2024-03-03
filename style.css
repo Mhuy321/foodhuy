@@ -124,3 +124,35 @@
     height: 300px;
     background-size: cover;
 }
+
+.option {
+    display: flex;
+    flex-direction: column;
+}
+
+.ftr {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.intro {
+    display: flex;
+}
+
+.op1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: #395542;
+}
+
+.a {
+    color: #ac845c;
+}
+
+.b {
+    color: aliceblue;
+}
